@@ -16,7 +16,6 @@ function App() {
       <header className="App-header">
         <div style={{ width: '90%' }}>
           <QuerySelector/>
-          <br/>
           <ThemeProvider theme="dark">
             <Container 
               title={{ text: queryInput }}

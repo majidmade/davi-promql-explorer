@@ -14,7 +14,10 @@ export const useHttp = (path, deps) => {
     fetch(path, newController)
       .then(res => res.json())
       .then(setData)
-      .catch(setError)
+      .catch(e => {
+        const cancelled = e instanceof DOMException
+        setError(cancelled ? null : e)
+      })
       .finally(() => setLoading(false));
   }, [...deps]);
   return { loading, error, data };
