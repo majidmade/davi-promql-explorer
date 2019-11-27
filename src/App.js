@@ -30,6 +30,7 @@ function App() {
                     {...sync}
                     zoomEnabled
                     data={chartData}
+                    xAxisTooltipFormat={Date}
                   />
                 )}
               </SyncProvider>
