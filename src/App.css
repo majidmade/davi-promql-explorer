@@ -26,5 +26,11 @@
 }
 
 #github-link {
+  font-size: small;
   text-align: center;
+}
+
+#github-link > a {
+  color: gray;
+  font-style: italic;
 }

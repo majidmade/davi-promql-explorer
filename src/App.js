@@ -40,7 +40,7 @@ function App() {
               }
             </Container>
           </ThemeProvider>
-          <div id="github-link"><small>abc</small></div>
+          <div id="github-link"><a href="https://github.com/majidmade/davi-promql-explorer" target="_blank">github</a></div>
         </div>
       </header>
     </div>
