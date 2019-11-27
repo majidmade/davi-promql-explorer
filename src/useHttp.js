@@ -12,7 +12,7 @@ export const useHttp = (path, deps) => {
     const newController = new AbortController();
     setController(newController);
     fetch(path, newController)
-      .then((res) => res.json())
+      .then(res => res.json())
       .then(setData)
       .catch(setError)
       .finally(() => setLoading(false));

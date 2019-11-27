@@ -5,15 +5,12 @@ import { useQuery } from './useQuery';
 import { useZoom } from './useZoom';
 import { ThemeProvider } from 'pivotal-ui/react/theme-context'
 import { SyncProvider, Container, StepChart } from 'davi-js';
-import { Loading } from './Loading'
 
 function App() {
   const { query, queryInput, QuerySelector} = useQuery();
   const { zoom, setZoom, zoomInput } = useZoom();
   const { loading, error, data } = useData({ query, zoom })
 
-  const chartData = loading ? [] : data;
-  
   return (
     <div className="App">
       <header className="App-header">
@@ -28,13 +25,14 @@ function App() {
               errorIndicator={!!error}
             >
               {
-                loading ? <Loading/> : (
+                (
                   <SyncProvider zoom={zoom} zoomCallback={setZoom}>
                     {sync => (
                       <StepChart
                         {...sync}
+                        animation={false}
                         zoomEnabled
-                        data={chartData}
+                        data={data}
                         xAxisTooltipFormat={Date}
                       />
                     )}
