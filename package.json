@@ -2,6 +2,7 @@
   "name": "davi-promql-explorer",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8081",
   "dependencies": {
     "davi-js": "^6.2.0",
     "pivotal-ui": "^19.2.2",

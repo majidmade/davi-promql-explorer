@@ -22,5 +22,6 @@
 }
 
 [class^="Container__Container__title"] > h1 {
-  width: 100%
+  /* font-family: monospace; */
+  width: 100%;
 }
