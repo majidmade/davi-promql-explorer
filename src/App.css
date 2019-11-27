@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -22,6 +22,12 @@
 }
 
 [class^="Container__Container__title"] > h1 {
-  /* font-family: monospace; */
+  font-family: Menlo, monospace;
   width: 100%;
+}
+
+#querySelector > .dropdown-toggle, #querySelector > .dropdown-menu {
+  color: white !important;
+  font-family: Menlo, monospace;
+  background-color: black !important
 }
