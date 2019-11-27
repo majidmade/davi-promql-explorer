@@ -1,11 +1,3 @@
-.App {
-  /* text-align: center; */
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -31,4 +23,8 @@
   font-family: Menlo, monospace;
   background-color: black !important;
   border: 1px solid #647882;
+}
+
+#github-link {
+  text-align: center;
 }
