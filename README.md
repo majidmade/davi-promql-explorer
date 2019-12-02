@@ -9,7 +9,7 @@
 ### catalyst:
 
 1. install and run `catalyst/applications/healthwatch`
-1. in `package.json`, make sure the `port` in the `proxy` matches `catalyst`
+1. in `davi-promql-explorer/package.json`, make sure the `port` in the `proxy` matches the `catalyst` frontend
 
 
 ### start:
